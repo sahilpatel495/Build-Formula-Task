@@ -12,9 +12,9 @@ function App() {
       <GlobalStyle />
       <Navbar />
         <Routes>
-          <Route path='/' exact component={Home} />
-        <Route path='/task' component={Task} />
-        <Route path='/contact' component={Contact} />
+          <Route path='/' exact element={<Home/>} />
+        <Route path='/task' element={<Task/>} />
+        <Route path='/contact' element={<Contact/>} />
         </Routes>
         
 
