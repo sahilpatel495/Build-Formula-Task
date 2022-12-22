@@ -4,7 +4,9 @@ import ToDoTask from "../../components/Todo";
 const Task = () => {
   return (
     <>
-      <ToDoTask />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <ToDoTask />
+      </div>
     </>
   );
 };

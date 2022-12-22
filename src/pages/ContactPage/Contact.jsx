@@ -1,7 +1,12 @@
 import React from "react";
+import ContactWrapper from "../../components/Contact/ContactWrapper";
 
 const Contact = () => {
-  return <>Contact</>;
+  return (
+    <>
+      <ContactWrapper />
+    </>
+  );
 };
 
 export default Contact;

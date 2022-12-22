@@ -1,5 +1,5 @@
 .taskBg {
-    background-color: #555;
+    background-color: #c5d5cb;
     border-radius: 6px;
     margin-bottom: 20px;
     padding: 10px 140px 10px 15px;
@@ -49,13 +49,68 @@
     display: inline-block;
     margin: 0px 10px 0 10px;
     cursor: pointer;
-    color: #00ff89;
+    color: rgb(53, 47, 47);
 }
 
 .taskBg .iconsWrap span:hover {
-    color: yellow;
+    color: rgb(0, 0, 0);
 }
 
 .mr-20 {
     margin-right: 20px;
+}
+.wrapper{
+   width: 510px;
+ 
+}
+.title{
+    text-align: center;
+    justify-content: center;
+    font-size:30px;
+    font-weight: 700;
+    margin: 12px;
+}
+.inputBar{
+  width: 180% !important;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 14px;
+  
+}
+.mainToDo{
+    display: flex;
+    width: 100%;
+}
+.addTaskButton{
+    margin-left: 150px;
+     height: 40px;
+     width: 85px;
+     color: white;
+     background-color: #0467FB;
+     border: none;
+     border-radius: 5px;
+     font-size: 15px;
+
+}.editTaskButton{
+    height: 40px;
+        width: 85px;
+        color: white;
+        background-color: #fc4747;
+        border: none;
+        border-radius: 5px;
+        margin-left: 5px;
+        font-size: 15px;
+}
+.textDataHome{
+    display: block;
+    margin: auto;
+    height: 300px;
+    width:100%;
+    text-align: center;
+    padding-top:30px;
+    font-size: 50px;
+}
+.mydataofLocal{
+    font-size: 40px;
+    padding-top: 20px;
 }

@@ -49,33 +49,39 @@ const ToDoTask = () => {
   };
 
   return (
-    <div>
-      <h2>To Do List</h2>
+    <>
+      <div className="wrapper">
+        <div className="title">
+          <div> To Do List</div>
+        </div>
 
-      {updateData && updateData ? (
-        <UpdateForm
-          updateData={updateData}
-          changeHolder={changeHolder}
-          updateTask={updateTask}
-          cancelUpdate={cancelUpdate}
+        <div className="">
+          {updateData && updateData ? (
+            <UpdateForm
+              updateData={updateData}
+              changeHolder={changeHolder}
+              updateTask={updateTask}
+              cancelUpdate={cancelUpdate}
+            />
+          ) : (
+            <AddTaskForm
+              newTask={newTask}
+              setNewTask={setNewTask}
+              addTask={addTask}
+            />
+          )}
+        </div>
+
+        {toDo && toDo.length ? "" : "No Tasks..."}
+
+        <ToDo
+          toDo={toDo}
+          markDone={markDone}
+          setUpdateData={setUpdateData}
+          deleteTask={deleteTask}
         />
-      ) : (
-        <AddTaskForm
-          newTask={newTask}
-          setNewTask={setNewTask}
-          addTask={addTask}
-        />
-      )}
-
-      {toDo && toDo.length ? "" : "No Tasks..."}
-
-      <ToDo
-        toDo={toDo}
-        markDone={markDone}
-        setUpdateData={setUpdateData}
-        deleteTask={deleteTask}
-      />
-    </div>
+      </div>
+    </>
   );
 };
 
